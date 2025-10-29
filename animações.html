@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="botão" id="anim1">HIPERMÉDIA</button>
+    <button class="botão" id="anim2">HIPERMÉDIA</button>
+    <button class="botão" id="anim3">HIPERMÉDIA</button>
+    <button class="botão" id="anim4">HIPERMÉDIA</button>
+    <button class="botão" id="anim5"><span id="anim5-span"></span>HIPERMÉDIA</button>
+    <button class="botão" id="anim6"><span id="text"></span>HIPERMÉDIA</button>
+    <div class="loader">
+        <div class="barra 1"></div>
+        <div class="barra 2"></div>
+        <div class="barra 3"></div>
+        <div class="barra 4"></div>
+        <div class="barra 5"></div>
+    </div>
+    <style>
+        .botão{
+            width:150px;
+            height:80px;
+            margin:20px;
+            background-color:transparent;
+            border:none;
+            color:blueviolet;
+            cursor:pointer;
+        }
+        #anim6{
+            position:relative;
+            border:2px solid blueviolet;
+            transition-duration:0.4s;
+        }
+        #anim6::after{
+            position:absolute;
+            content:'';
+            top:0;
+            right:0;
+            width:0;
+            height:0;
+            border-style:solid;
+            border-width:0 0 0 0;
+            border-color:transparent blueviolet transparent transparent ;
+            transition-duration:0.4s;
+        }
+        #anim6::before{
+            position:absolute;
+            content:'';
+            bottom:0;
+            right:0;
+            width:0;
+            height:0;
+            border-style:solid;
+            border-width:0 0 0 0;
+            border-color:transparent transparent blueviolet transparent ;
+            transition-duration:0.4s;
+        }
+        #text{
+            transition-duration:0.4s;
+        }
+        #anim6:hover>#text{
+            padding-right:30px;
+        }
+        #anim6:hover::after{
+            border-width: 0 40px 40px 0;
+        }
+        #anim6:hover::before{
+            border-width: 0 0 40px 40px;
+        }
+        #anim5{
+            position:relative;
+        }
+        #anim5::before{
+            position:absolute;
+            content:'';
+            top:0;
+            left:0;
+            width:0;
+            height:3px;
+            background-color:blueviolet;
+
+            transition-duration:200ms;
+        }
+        #anim5::after{
+            position:absolute;
+            content:'';
+            bottom:0;
+            right:0;
+            width:0;
+            height:3px;
+            background-color:blueviolet;
+
+            transition-delay:200ms;
+            transition-duration:200ms;
+        }
+        #anim5-span::after{
+            position:absolute;
+            content:'';
+            top:0;
+            right:0;
+            width:3px;
+            height:0;
+            background-color:blueviolet;
+            transition-delay:200ms;
+            transition-duration:200ms;
+        }
+        #anim5-span:hover::before,
+        #anim5-span:hover::after{
+            height:100%
+        }
+        #anim5:hover::before,
+        #anim5:hover::after{
+            width:100%
+        }
+        #anim4{
+            position:relative;
+            transition-duration:200ms;
+        }
+        #anim4::before{
+            position:absolute;
+            content:'';
+            top:0;
+            left:0;
+            width:0;
+            height:0;
+            background-color:blueviolet;
+            z-index:-1;
+            transition:200ms;
+        }
+        #anim4::after{
+            position:absolute;
+            content:'';
+            bottom:0;
+            right:0;
+            width:0;
+            height:0;
+            background-color:blueviolet;
+            z-index:-1;
+            transition:200ms;
+        }
+        #anim4:hover{
+            color:white;
+        }
+        #anim4:hover::before,
+        #anim4:hover::after{
+            width:100%;
+            height:100%;
+        }
+        #anim3{
+            position:relative;
+            color:white;
+        }
+        #anim3::after{
+            position:absolute;
+            content:'';
+            bottom:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:blueviolet;
+            z-index:-1;
+
+            transition-duration:200ms;
+        }
+        #anime3:hover{
+            color:white
+        }
+        #anime3:hover::after{
+            height:100%
+        }
+        #anim2{
+            position:relative;
+        }
+        #anim2::before{
+            position:absolute;
+            content:'';
+            top:0;
+            left:0;
+            width:100%;
+            height:3px;
+            background-color:blueviolet;
+
+            transition-duration:200ms;
+        }
+        #anim2::after{
+            position:absolute;
+            content:'';
+            bottom:0;
+            left:0;
+            width:100%;
+            height:3px;
+            background-color:blueviolet;
+
+            transition-duration:200ms;
+        }
+        #anim2:hover::before,
+        #anim2:hover::after{
+            width:100%
+        }
+        #anim1{
+            border:3px solid blueviolet;
+            transition-duration:200ms;
+        }
+        #anim1:hover{
+            background-color:blueviolet;
+            color:white;
+        }
+    </style>
+</body>
+</html>

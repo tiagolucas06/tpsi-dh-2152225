@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+        </div>
+        <div class="card2">
+            <div class="container2">
+            <h3>31 OUT| Os melhores websites de halloween</h3>
+            <h3>Por Marco Olim</h3>
+            </div>
+        </div>
+        <div class="card3">
+        </div>
+        <div class="card4">
+            <h1>LOGIN</h1>
+        </div>
+        <div class="card5">
+            <h2>Design Hipermédia: CSS Halloween</h2>
+        </div>
+    <style>
+        .container{
+            display:grid;            
+            background-color:midnightblue;
+            height: 90vh; 
+            justify-content:center;
+            align-items:center;
+            gap:10px;
+            grid-template-areas: "c1 c1 c2 c2"
+                                 "c5 c5 c2 c2"
+                                 "c3 c3 c4 c4";
+        }
+        .container2{
+            height:10vh;
+            background-color:white;
+            color:black;
+            width:320px;
+            padding:15px;
+            justify-content:center;
+            align-items:center;            
+        }
+         .card1{
+            background-image:url("https://images.pexels.com/photos/619423/pexels-photo-619423.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-size:cover;
+            color:white;
+            width:200px;
+            height:150px;
+            padding:20px;
+            grid-area:c1;
+         }
+        .card2{
+            background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Pumpkins_with_candles_%28Unsplash%29.jpg/1599px-Pumpkins_with_candles_%28Unsplash%29.jpg?20170818192652");
+            background-size:cover;
+            color:white;
+            width:350px;
+            height:400px;
+            grid-area:c2;
+            justify-items:flex-end;
+            align-content:flex-end;
+        }
+        .card3{
+            background-image:url("https://media.istockphoto.com/id/175195916/photo/halloween-casino-witch-with-smoking-pipe-and-pumpkins.jpg?s=612x612&w=is&k=20&c=vlH2OV6tCuh_h2IwvP0GHks41uKbhBlzucZNhUkiuCA=");
+            background-size:cover;
+            width:200px;
+            height:150px;
+            padding:20px;
+            grid-area:c3;
+        }
+        .card4{
+            background-image:url("https://media.istockphoto.com/id/1174282589/photo/halloween-jack-o-lantern-bucket-filled-with-candy-isolated-on-white.jpg?s=612x612&w=0&k=20&c=tuvcuOM1xD8Pfj9yLl9mjYqyssOxr_bqjuTZwykE-CE=");
+            background-size:cover;
+            width:310px;
+            height:150px;
+            padding:20px;
+            grid-area:c4;
+        }
+        .card5{
+            color:white;
+            width:200px;
+            height:100px;
+            padding:20px;
+            border-bottom:5px solid white;
+            grid-area:c5;
+        }
+    </style>
+</body>
+</html>

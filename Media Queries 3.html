@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries 3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <img width="25px" src="image-daniel.jpg">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt id animi quasi odio perferendis, earum aliquid exercitationem vero ea magni cumque, amet, labore atque dolorum fugiat porro dolores? Consequuntur, esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet soluta molestiae veniam itaque aliquid adipisci, at quasi maiores fugit, accusamus fuga magni minima dolore earum modi quibusdam quia provident obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus dolores facere quidem voluptatibus, repellendus itaque in inventore sequi magnam iusto placeat mollitia expedita aliquam voluptatum? Mollitia fugit cum impedit ratione?</p>
+        </div>
+        <div class="card2">
+            <img width="25px" src="image-jonathan.jpg">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente maiores mollitia alias laboriosam quaerat veniam ex enim quos officia est veritatis similique in, corrupti labore distinctio dignissimos deserunt voluptatem?</p>
+        </div>
+        <div class="card3">
+            <img width="25px" src="image-kira.jpg">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rerum maxime ipsam nihil sequi illum accusantium, deserunt optio officia, maiores placeat ex alias quaerat inventore reprehenderit suscipit eaque aut magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem eius suscipit labore, doloribus libero praesentium et perferendis obcaecati nulla, laudantium consectetur hic maiores omnis, eos id ullam ipsa quae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore consectetur maiores ullam nesciunt soluta beatae officiis blanditiis accusamus veritatis pariatur deleniti expedita voluptatum unde eaque suscipit, obcaecati molestias quia dolores! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, veritatis? Labore eligendi nihil repellendus provident ratione vero. Id repudiandae molestiae odio quidem error magni non impedit, tempore magnam, dolorem necessitatibus.</p>
+        </div>
+        <div class="card4">
+            <img width="25px" src="image-jeanette.jpg">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum veniam quis odit, similique aspernatur non aliquam ab dolor laboriosam fugiat quas vitae soluta qui eos at doloribus. Tempora, esse nemo?</p>
+        </div>
+        <div class="card5">
+            <img width="25px" src="image-patrick.jpg">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, magni officia quaerat quo ratione nostrum impedit hic minus? Odit eveniet itaque obcaecati? Non sed tempore vero ipsam officia nisi sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis laboriosam tempore deleniti modi. Rem, deleniti sit nisi vero reprehenderit cupiditate, dolorem laborum illo unde laudantium reiciendis dignissimos. Consequatur, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sed, quidem porro fugiat accusamus error amet laboriosam suscipit, fuga dignissimos dolore. Veritatis qui necessitatibus suscipit incidunt? Dicta incidunt facilis explicabo!</p>
+        </div>
+    </div>
+    <style>
+        .container{
+            display:grid;            
+            background-color:white;
+            height: 90vh; 
+            justify-content:center;
+            align-items:center;
+            gap:10px;
+            grid-template-areas: "c1 c1 c2 c3"
+                                 "c4 c5 c5 c3";
+        }
+         .card1{
+            background-color:blueviolet;
+            box-shadow: 1px 1px 1px 1px black;
+            color:white;
+            width:500px;
+            height:250px;
+            padding:20px;
+            grid-area:c1;
+        }
+        .card2{
+            background-color:gray;
+            box-shadow: 1px 1px 1px 1px black;
+            color:white;
+            width:250px;
+            height:250px;
+            padding:20px;
+            grid-area:c2;
+        }
+        .card3{
+            background-color:white;
+            box-shadow: 1px 1px 1px 1px black;
+            width:250px;
+            height:583px;
+            padding:20px;
+            grid-area:c3;
+        }
+        .card4{
+            background-color:white;
+            box-shadow: 1px 1px 1px 1px black;
+            width:250px;
+            height:250px;
+            padding:20px;
+            grid-area:c4;
+        }
+        .card5{
+            background-color:black;
+            box-shadow: 1px 1px 1px 1px black;
+            color:white;
+            width:500px;
+            height:250px;
+            padding:20px;
+            grid-area:c5;
+        }
+    </style>
+</body>
+</html>

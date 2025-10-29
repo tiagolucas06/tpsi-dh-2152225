@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <h3>Team Builder</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img width="" src="">
+        </div>
+        <div class="card2">
+            <h3>Karma</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="" alt="">
+        </div>
+        <div class="card3">
+            <h3>Supervisor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="" alt="">
+        </div>
+        <div class="card4">
+            <h3>Calculator</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="" alt="">
+        </div>
+    </div>
+    <style>
+        body{
+            display:flex;
+            background-color: gray;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            display:grid;            
+            background-color:gray;
+            /* height: 90vh; */
+            justify-content:center;
+            align-items:center;
+            gap:20px;
+            grid-template-areas:    ". c1 ."
+                                    "c3 c1 c4"
+                                    "c3 c2 c4"
+                                    ". c2 .";
+        }
+        .card1{
+            background-color:white;
+            width:250px;
+            height:150px;
+            padding:20px;
+            border-top:5px solid red;
+            grid-area:c1;
+        }
+        .card2{
+            background-color:white;
+            width:250px;
+            height:150px;
+            padding:20px;
+            border-top:5px solid orange;
+            grid-area:c2;
+        }
+        .card3{
+            background-color:white;
+            width:250px;
+            height:150px;
+            padding:20px;
+            border-top:5px solid aquamarine;
+            grid-area:c3;
+        }
+        .card4{
+            background-color:white;
+            width:250px;
+            height:150px;
+            padding:20px;
+            border-top:5px solid darkblue;
+            grid-area:c4;
+        }
+    </style>
+</body>
+</html>
